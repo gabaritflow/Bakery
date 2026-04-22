@@ -1,0 +1,148 @@
+.formats-section__title {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .formats-section__title {
+    margin-bottom: 80px;
+  }
+}
+
+.formats-section__slider {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .formats-section__slider {
+    gap: 32px;
+  }
+}
+
+.formats-section__container {
+  overflow: hidden;
+  flex: 1;
+}
+
+.formats-section__list {
+  margin-bottom: 32px;
+}
+
+.formats-section__button {
+  display: none;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .formats-section__button {
+    display: flex;
+  }
+}
+
+.format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  height: 380px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+  border-radius: 20px;
+  transition: var(--transition-default);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .format-card {
+    height: 444px;
+    padding: 24px;
+  }
+}
+
+.format-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-large);
+}
+
+.format-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .format-card__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.format-card__title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-brand-normal);
+  transition: width 0.3s ease;
+}
+
+.format-card:hover .format-card__title::after {
+  width: 50px;
+}
+
+.format-card__text {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+}
+
+@media screen and (min-width: 768px) {
+  .format-card__text {
+    font-size: 14px;
+  }
+}
+
+.format-card__text p {
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.format-card__text p::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-brand-normal);
+  font-size: 12px;
+}
+
+.format-card__text p:last-child {
+  margin-bottom: 0;
+}
+
+.format-card__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: -1;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.format-card:hover .format-card__image {
+  transform: scale(1.05);
+}
