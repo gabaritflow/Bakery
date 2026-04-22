@@ -9,24 +9,24 @@
   transition: transform 0.3s ease;
   z-index: 1001;
   padding: 60px 24px;
-}
 
-.mobile-menu.is-open {
-  transform: translateX(0);
-}
+  &.is-open {
+    transform: translateX(0);
+  }
 
-.mobile-menu__btn-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: var(--color-primary-light);
-  font-size: 16px;
-  cursor: pointer;
-  transition: var(--transition-default);
-}
+  &__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--color-primary-light);
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition-default);
 
-.mobile-menu__btn-close:hover {
-  color: var(--color-brand-normal);
+    &:hover {
+      color: var(--color-brand-normal);
+    }
+  }
 }

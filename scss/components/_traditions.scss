@@ -1,74 +1,64 @@
 .traditions-section {
   padding-top: 40px;
-}
 
-@media screen and (min-width: 768px) {
-  .traditions-section {
+  @media screen and (min-width: 768px) {
     padding-top: 80px;
   }
-}
 
-.traditions-section__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  flex-direction: column;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: column;
 
-@media screen and (min-width: 1024px) {
-  .traditions-section__container {
-    flex-direction: row;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
   }
-}
 
-.traditions-section__content {
-  flex: 1;
-  animation: fadeInLeft 0.8s ease;
-}
-
-.traditions-section__title {
-  margin-bottom: 24px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-@media screen and (min-width: 768px) {
-  .traditions-section__title {
-    font-size: 20px;
+  &__content {
+    flex: 1;
+    animation: fadeInLeft 0.8s ease;
   }
-}
 
-.traditions-section__text {
-  margin-bottom: 16px;
-}
+  &__title {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.5;
 
-.traditions-section__text--limited {
-  max-width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .traditions-section__text--limited {
-    max-width: 330px;
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
   }
-}
 
-.traditions-section__image {
-  display: none;
-  border-radius: 400px 400px 0 0;
-  width: 100%;
-  max-width: 400px;
-  object-fit: cover;
-  animation: fadeInRight 0.8s ease;
-  transition: var(--transition-default);
-}
+  &__text {
+    margin-bottom: 16px;
+  }
 
-.traditions-section__image:hover {
-  transform: scale(1.02);
-}
+  &__text--limited {
+    max-width: 100%;
 
-@media screen and (min-width: 768px) {
-  .traditions-section__image {
-    display: block;
+    @media screen and (min-width: 768px) {
+      max-width: 330px;
+    }
+  }
+
+  &__image {
+    display: none;
+    border-radius: 400px 400px 0 0;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    animation: fadeInRight 0.8s ease;
+    transition: var(--transition-default);
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 }

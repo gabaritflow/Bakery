@@ -11,34 +11,30 @@
   cursor: pointer;
   flex-shrink: 0;
   transition: var(--transition-default);
-}
 
-@media screen and (min-width: 768px) {
-  .carousel-button {
+  @media screen and (min-width: 768px) {
     width: 44px;
     height: 44px;
   }
-}
 
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-  transform: scale(1.1);
-}
+  &:hover {
+    background-color: var(--color-primary-dark);
+    transform: scale(1.1);
+  }
 
-.carousel-button:hover .carousel-arrow {
-  fill: var(--color-primary-light);
-}
+  &__arrow {
+    fill: var(--color-primary-dark);
+    width: 14px;
+    height: 14px;
+    transition: var(--transition-default);
 
-.carousel-arrow {
-  fill: var(--color-primary-dark);
-  width: 14px;
-  height: 14px;
-  transition: var(--transition-default);
-}
+    &:hover {
+      fill: var(--color-primary-light);
+    }
 
-@media screen and (min-width: 768px) {
-  .carousel-arrow {
-    width: 16px;
-    height: 16px;
+    @media screen and (min-width: 768px) {
+      width: 16px;
+      height: 16px;
+    }
   }
 }

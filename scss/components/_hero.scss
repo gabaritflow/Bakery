@@ -15,50 +15,40 @@
   background-position: center;
   background-size: cover;
   position: relative;
-}
 
-@media screen and (min-width: 768px) {
-  .hero-section {
+  @media screen and (min-width: 768px) {
     padding: 200px 0;
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .hero-section {
+  @media screen and (min-width: 1024px) {
     padding: 272px 0;
   }
-}
 
-.hero-section__title {
-  margin-bottom: 24px;
-  color: var(--color-primary-light);
-  text-align: center;
-  font-size: 48px;
-  line-height: 1.2;
-  font-weight: 900;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: fadeInUp 0.8s ease;
-}
+  &__title {
+    margin-bottom: 24px;
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.8s ease;
 
-@media screen and (min-width: 768px) {
-  .hero-section__title {
-    font-size: 80px;
+    @media screen and (min-width: 768px) {
+      font-size: 80px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 128px;
+    }
   }
-}
 
-@media screen and (min-width: 1024px) {
-  .hero-section__title {
-    font-size: 128px;
-  }
-}
+  &__button {
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease 0.3s both;
 
-.hero-section__button {
-  margin: 0 auto;
-  animation: fadeInUp 0.8s ease 0.3s both;
-}
-
-@media screen and (min-width: 1024px) {
-  .hero-section__button {
-    display: none;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
   }
 }
